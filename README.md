@@ -6,10 +6,10 @@
    https://github.com/z-song/laravel-admin/blob/master/docs/zh/README.md
 
 #安装thickas/crud-generator
-1、终端下运行 <br>
+终端下运行 <br>
 composer require thickas/crud-generator
 
-2、编辑config/app.php,在providers数组中添加 <br>
+编辑config/app.php,在providers数组中添加 <br>
  Thickas\CrudGenerator\CrudGeneratorServiceProvider::class,
 
 #使用例子
@@ -23,10 +23,10 @@ php artisan migrate<br><br>
 其中model-name可选，默认为：App\Post<br>
 controller-namespace可选，默认为：App\Admin<br><br>
 
-#2、生成migration
+#生成migration
 php artisan crud:migration Post --fields=title#string#req;content#text;category#select
 
-#3、生成Model
+#生成Model
 php artisan crud:model Post --fields=title#string#req;content#text;category#select --model-namespace=Models<br><br>
 
 model-namespace 可选，默认为：App\ <br><br>
@@ -34,7 +34,7 @@ model-namespace 可选，默认为：App\ <br><br>
 也可在模型名中指定model-namespace，例如：<br>
 php artisan crud:model Models\Post --fields=title#string#req;content#text;category#select<br>
 
-#4、生成Controller
+#生成Controller
 php artisan crud:generate PostController --fields=title#string#req;content#text;category#select --controller-namespace=Home  --model-name=App\Models\Post<br>
 
 model-name可选，默认为：App\Post，其中Post为控制器名称的前半部分<br>
