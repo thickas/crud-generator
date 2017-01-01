@@ -1,0 +1,27 @@
+{
+    "name": "thickas/crud-generator",
+    "license": "MIT",
+    "description": "Laravel 5 CRUD Generator for z-song/laravel-admin ",
+    "keywords": [
+        "laravel",
+        "crud",
+        "crud generator",
+        "laravel crud generator"
+    ],
+    "authors": [
+        {
+            "name": "thickas",
+            "email": "thickas@vip.qq.com",
+            "homepage": ""
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "^5.1" 
+    },
+    "autoload": {
+        "psr-4": {
+            "Thickas\\CrudGenerator\\": "src/"
+        }
+    }
+}
