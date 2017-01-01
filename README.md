@@ -7,7 +7,7 @@
 
 #安装thickas/crud-generator
 终端下运行 <br>
-composer require thickas/crud-generator
+composer require thickas/crud-generator "v1.0" <br>
 
 编辑config/app.php,在providers数组中添加 <br>
  Thickas\CrudGenerator\CrudGeneratorServiceProvider::class,
