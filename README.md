@@ -27,9 +27,7 @@ controller-namespace可选，默认为：App\Admin<br><br>
 php artisan crud:migration Post --fields=title#string;content#text;category#select
 
 #生成Model
-php artisan crud:model Post --fields=title#string;content#text;category#select --model-namespace=Models<br><br>
-
-model-namespace 可选，默认为：App\ <br><br>
+php artisan crud:model Post --fields=title#string;content#text;category#select 
 
 也可在模型名中指定model-namespace，例如：<br>
 php artisan crud:model Models\Post --fields=title#string;content#text;category#select<br>
