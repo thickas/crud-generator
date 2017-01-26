@@ -33,12 +33,12 @@ php artisan crud:model Post --fields=title#string;content#text;category#select
 php artisan crud:model Models\Post --fields=title#string;content#text;category#select<br>
 
 #生成Controller
-php artisan crud:generate PostController --fields=title#string;content#text;category#select --controller-namespace=Home  --model-name=App\Models\Post<br>
+php artisan crud:controller PostController --fields=title#string;content#text;category#select --controller-namespace=Home  --model-name=App\Models\Post<br>
 
 model-name可选，默认为：App\Post，其中Post为控制器名称的前半部分<br>
 controller-namespace可选，默认为：App\Admin<br><br>
 
 与模型类似，也可控制器名称中指定controller-namespace，例如<br>
-php artisan crud:generate Home\PostController --fields=title#string;content#text;category#select --model-name=App\Models\Post<br>
+php artisan crud:controller Home\PostController --fields=title#string;content#text;category#select --model-name=App\Models\Post<br>
 #注意
 如果分步生成，需要自行添加路由，并运行composer dump-autoload。
